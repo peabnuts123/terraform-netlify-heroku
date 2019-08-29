@@ -1,0 +1,27 @@
+{
+  "name": "terraform-netlify-heroku",
+  "version": "1.0.0",
+  "description": "Terraform example using netlify and heroku",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "cd client && npm install && cd ../server && npm install",
+    "start:client": "cd client && npm start",
+    "start:server": "cd server && npm start",
+    "start": "concurrently 'npm run start:client' 'npm run start:server'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peabnuts123/terraform-netlify-heroku.git"
+  },
+  "keywords": [],
+  "author": "peabnuts123",
+  "private": true,
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peabnuts123/terraform-netlify-heroku/issues"
+  },
+  "homepage": "https://github.com/peabnuts123/terraform-netlify-heroku#readme",
+  "devDependencies": {
+    "concurrently": "^4.1.2"
+  }
+}
