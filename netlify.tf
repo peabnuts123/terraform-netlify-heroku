@@ -21,7 +21,7 @@ resource "netlify_site" "dummy-web-app" {
   name = "${var.netlify_site_name}"
 
   repo {
-    command       = "API_URL='https://${heroku_app.dummy-web-api.name}.herokuapp.com' ./node_modules/.bin/preact build"
+    command       = "API_URL='https://${var.heroku_app_name}.herokuapp.com' ./node_modules/.bin/preact build"
     dir           = "/build"
     provider      = "github"
     repo_path     = "peabnuts123/dummy-web-app"
