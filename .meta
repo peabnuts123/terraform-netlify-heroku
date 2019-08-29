@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "client": "git@github.com:peabnuts123/dummy-web-app.git",
+    "server": "git@github.com:peabnuts123/dummy-web-api.git"
+  }
+}
